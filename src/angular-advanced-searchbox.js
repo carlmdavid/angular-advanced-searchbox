@@ -375,6 +375,7 @@ angular.module('angular-advanced-searchbox', [])
                                         if($scope.model[change.key].length === 0)
                                             delete $scope.model[change.key];
                                     } else {
+                                        // re-set the value
                                         $scope.model[change.key] = change.value;
                                     }
                                 } else {
